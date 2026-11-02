@@ -6,4 +6,7 @@
 
     End Sub
 
+    Private Sub PetugasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PetugasToolStripMenuItem.Click
+
+    End Sub
 End Class

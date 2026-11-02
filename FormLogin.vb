@@ -1,5 +1,4 @@
 ﻿Imports MySql.Data.MySqlClient
-Imports Mysqlx.Data.MysqlCLient
 
 Public Class FormLogin
 
@@ -114,7 +113,7 @@ Public Class FormLogin
                         If role = "admin" Then
                             dashboard = New FormAdmin()
                         ElseIf role = "petugas" Then
-                            dashboard = New FormPetugas()
+                            dashboard = New FormAdmin()
                         Else
                             MessageBox.Show("Role akun tidak dikenali!")
                             Return
