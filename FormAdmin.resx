@@ -122,13 +122,13 @@
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="IadjaiToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>156, 28</value>
+    <value>224, 28</value>
   </data>
   <data name="IadjaiToolStripMenuItem.Text" xml:space="preserve">
     <value>Admin</value>
   </data>
   <data name="PetugasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>156, 28</value>
+    <value>224, 28</value>
   </data>
   <data name="PetugasToolStripMenuItem.Text" xml:space="preserve">
     <value>Petugas</value>
