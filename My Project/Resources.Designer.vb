@@ -83,6 +83,36 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property Perpustakaan_Pusat_Ilmu_Presentasi() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Perpustakaan Pusat Ilmu Presentasi", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Perpustakaan_Pusat_Ilmu_Presentasi__2_() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Perpustakaan Pusat Ilmu Presentasi (2)", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Perpustakaan_Pusat_Ilmu_Presentasi1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Perpustakaan Pusat Ilmu Presentasi1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property Warna_Warni_Ilustrasi_Ceria_Perpustakaan_Spanduk() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Warna Warni Ilustrasi Ceria Perpustakaan Spanduk", resourceCulture)

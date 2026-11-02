@@ -7,7 +7,7 @@ Module koneksi
         Dim connectionString As String =
            "Server=localhost;" &
            "Port=3306;" &
-           "Database=perpustakaan_kampus;" &
+           "Database=perpustakaan_umum;" &
            "Uid=root;" &
            "Pwd=;"
 

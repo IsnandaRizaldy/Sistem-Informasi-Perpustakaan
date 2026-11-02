@@ -5,9 +5,9 @@ Public Class FormLogin
     Private Sub btnTesKoneksi_Click(sender As Object, e As EventArgs)
 
         Try
-            Using conn = GetConnection
+            Using conn = GetConnection()
 
-                conn.Open
+                conn.Open()
 
                 MessageBox.Show(
                 "Koneksi database berhasil!",
