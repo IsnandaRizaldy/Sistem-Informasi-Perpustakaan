@@ -142,7 +142,7 @@ Partial Class FormCreateAdmin
         ' 
         ' TextBox3
         ' 
-        TextBox3.Location = New Point(20, 260)
+        TextBox3.Location = New Point(20, 264)
         TextBox3.Name = "TextBox3"
         TextBox3.Size = New Size(200, 27)
         TextBox3.TabIndex = 10
@@ -150,7 +150,7 @@ Partial Class FormCreateAdmin
         ' ComboBox1
         ' 
         ComboBox1.FormattingEnabled = True
-        ComboBox1.Location = New Point(244, 259)
+        ComboBox1.Location = New Point(244, 263)
         ComboBox1.Name = "ComboBox1"
         ComboBox1.Size = New Size(151, 28)
         ComboBox1.TabIndex = 11
