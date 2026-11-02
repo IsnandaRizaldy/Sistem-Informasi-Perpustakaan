@@ -29,7 +29,6 @@ Partial Class FormLogin
         txtUsername = New TextBox()
         txtPassword = New TextBox()
         btnLogin = New Button()
-        flpInformasiLogin = New FlowLayoutPanel()
         PictureBox1 = New PictureBox()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -37,8 +36,9 @@ Partial Class FormLogin
         ' lblJudul
         ' 
         lblJudul.AutoSize = True
+        lblJudul.BackColor = Color.Transparent
         lblJudul.Font = New Font("Bernard MT Condensed", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lblJudul.Location = New Point(123, 9)
+        lblJudul.Location = New Point(308, 9)
         lblJudul.Name = "lblJudul"
         lblJudul.Size = New Size(580, 52)
         lblJudul.TabIndex = 0
@@ -49,7 +49,7 @@ Partial Class FormLogin
         ' 
         lblUsername.AutoSize = True
         lblUsername.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lblUsername.Location = New Point(12, 120)
+        lblUsername.Location = New Point(204, 182)
         lblUsername.Name = "lblUsername"
         lblUsername.Size = New Size(106, 28)
         lblUsername.TabIndex = 1
@@ -60,7 +60,7 @@ Partial Class FormLogin
         ' 
         lblPassword.AutoSize = True
         lblPassword.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lblPassword.Location = New Point(12, 165)
+        lblPassword.Location = New Point(204, 227)
         lblPassword.Name = "lblPassword"
         lblPassword.Size = New Size(101, 28)
         lblPassword.TabIndex = 2
@@ -70,7 +70,7 @@ Partial Class FormLogin
         ' txtUsername
         ' 
         txtUsername.Font = New Font("Segoe UI", 10.2F)
-        txtUsername.Location = New Point(153, 118)
+        txtUsername.Location = New Point(345, 180)
         txtUsername.Margin = New Padding(3, 3, 10, 3)
         txtUsername.Name = "txtUsername"
         txtUsername.Size = New Size(497, 30)
@@ -79,7 +79,7 @@ Partial Class FormLogin
         ' txtPassword
         ' 
         txtPassword.Font = New Font("Segoe UI", 10.2F)
-        txtPassword.Location = New Point(153, 163)
+        txtPassword.Location = New Point(345, 225)
         txtPassword.Name = "txtPassword"
         txtPassword.Size = New Size(497, 30)
         txtPassword.TabIndex = 3
@@ -89,25 +89,18 @@ Partial Class FormLogin
         ' 
         btnLogin.FlatStyle = FlatStyle.Flat
         btnLogin.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        btnLogin.Location = New Point(358, 369)
+        btnLogin.Location = New Point(550, 431)
         btnLogin.Name = "btnLogin"
         btnLogin.Size = New Size(107, 54)
         btnLogin.TabIndex = 4
         btnLogin.Text = "LOGIN"
         btnLogin.UseVisualStyleBackColor = True
         ' 
-        ' flpInformasiLogin
-        ' 
-        flpInformasiLogin.Location = New Point(153, 206)
-        flpInformasiLogin.Margin = New Padding(3, 10, 3, 10)
-        flpInformasiLogin.Name = "flpInformasiLogin"
-        flpInformasiLogin.Size = New Size(497, 150)
-        flpInformasiLogin.TabIndex = 8
-        ' 
         ' PictureBox1
         ' 
+        PictureBox1.BackColor = Color.Transparent
         PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
-        PictureBox1.Location = New Point(-7, -17)
+        PictureBox1.Location = New Point(201, -20)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(125, 109)
         PictureBox1.SizeMode = PictureBoxSizeMode.Zoom
@@ -118,15 +111,14 @@ Partial Class FormLogin
         ' 
         AutoScaleDimensions = New SizeF(8.0F, 20.0F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
-        Controls.Add(PictureBox1)
-        Controls.Add(flpInformasiLogin)
+        ClientSize = New Size(1067, 557)
         Controls.Add(btnLogin)
         Controls.Add(txtPassword)
         Controls.Add(txtUsername)
         Controls.Add(lblPassword)
         Controls.Add(lblUsername)
         Controls.Add(lblJudul)
+        Controls.Add(PictureBox1)
         Name = "FormLogin"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Login Perpustakaan"
