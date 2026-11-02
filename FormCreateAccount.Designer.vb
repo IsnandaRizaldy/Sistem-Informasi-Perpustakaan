@@ -162,9 +162,9 @@ Partial Class FormCreateAccount
         TextBox4.Size = New Size(445, 27)
         TextBox4.TabIndex = 12
         ' 
-        ' FormCreateAdmin
+        ' FormCreateAccount
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = My.Resources.Resources.Perpustakaan_Pusat_Ilmu_Presentasi__2_
         BackgroundImageLayout = ImageLayout.Stretch
@@ -182,7 +182,7 @@ Partial Class FormCreateAccount
         Controls.Add(Label3)
         Controls.Add(Label2)
         Controls.Add(Label1)
-        Name = "FormCreateAdmin"
+        Name = "FormCreateAccount"
         Text = "Form1"
         ResumeLayout(False)
         PerformLayout()

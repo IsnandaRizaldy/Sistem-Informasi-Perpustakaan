@@ -23,46 +23,58 @@ Partial Class FormAdmin
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormAdmin))
-        MenuStrip1 = New MenuStrip()
+        Navbar = New MenuStrip()
+        LogoPerpustakaanToolStripMenuItem = New ToolStripMenuItem()
         TambahUserToolStripMenuItem = New ToolStripMenuItem()
-        IadjaiToolStripMenuItem = New ToolStripMenuItem()
-        PetugasToolStripMenuItem = New ToolStripMenuItem()
         TambahToolStripMenuItem = New ToolStripMenuItem()
         SemuaBukuToolStripMenuItem = New ToolStripMenuItem()
         BukuDipinjamToolStripMenuItem = New ToolStripMenuItem()
         TransaksiToolStripMenuItem = New ToolStripMenuItem()
-        LihatTransaksiToolStripMenuItem = New ToolStripMenuItem()
+        PeminjamanToolStripMenuItem = New ToolStripMenuItem()
+        HistoriPeminjamanToolStripMenuItem = New ToolStripMenuItem()
+        BukuTamuToolStripMenuItem = New ToolStripMenuItem()
+        AdminToolStripMenuItem = New ToolStripMenuItem()
         lblUserLogin = New Label()
-        MenuStrip1.SuspendLayout()
+        pnlNavbar = New Panel()
+        pnlScroll = New Panel()
+        pnlKonten = New Panel()
+        pnlHero = New Panel()
+        Panel1 = New Panel()
+        pnlKoleksi = New Panel()
+        Navbar.SuspendLayout()
+        pnlNavbar.SuspendLayout()
+        pnlScroll.SuspendLayout()
+        pnlKonten.SuspendLayout()
+        pnlHero.SuspendLayout()
         SuspendLayout()
         ' 
-        ' MenuStrip1
+        ' Navbar
         ' 
-        MenuStrip1.ImageScalingSize = New Size(20, 20)
-        MenuStrip1.Items.AddRange(New ToolStripItem() {TambahUserToolStripMenuItem, TambahToolStripMenuItem, TransaksiToolStripMenuItem, LihatTransaksiToolStripMenuItem})
-        resources.ApplyResources(MenuStrip1, "MenuStrip1")
-        MenuStrip1.Name = "MenuStrip1"
+        resources.ApplyResources(Navbar, "Navbar")
+        Navbar.BackColor = Color.FromArgb(CByte(27), CByte(73), CByte(101))
+        Navbar.ImageScalingSize = New Size(150, 150)
+        Navbar.Items.AddRange(New ToolStripItem() {LogoPerpustakaanToolStripMenuItem, TambahUserToolStripMenuItem, TambahToolStripMenuItem, TransaksiToolStripMenuItem, AdminToolStripMenuItem})
+        Navbar.Name = "Navbar"
+        ' 
+        ' LogoPerpustakaanToolStripMenuItem
+        ' 
+        resources.ApplyResources(LogoPerpustakaanToolStripMenuItem, "LogoPerpustakaanToolStripMenuItem")
+        LogoPerpustakaanToolStripMenuItem.ForeColor = SystemColors.ControlLight
+        LogoPerpustakaanToolStripMenuItem.Image = My.Resources.Resources.Logo_Perpus_Minimalis___Putih
+        LogoPerpustakaanToolStripMenuItem.Name = "LogoPerpustakaanToolStripMenuItem"
+        LogoPerpustakaanToolStripMenuItem.Padding = New Padding(5, 0, 5, 30)
         ' 
         ' TambahUserToolStripMenuItem
         ' 
-        TambahUserToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {IadjaiToolStripMenuItem, PetugasToolStripMenuItem})
         resources.ApplyResources(TambahUserToolStripMenuItem, "TambahUserToolStripMenuItem")
+        TambahUserToolStripMenuItem.ForeColor = SystemColors.ControlLight
         TambahUserToolStripMenuItem.Name = "TambahUserToolStripMenuItem"
-        ' 
-        ' IadjaiToolStripMenuItem
-        ' 
-        IadjaiToolStripMenuItem.Name = "IadjaiToolStripMenuItem"
-        resources.ApplyResources(IadjaiToolStripMenuItem, "IadjaiToolStripMenuItem")
-        ' 
-        ' PetugasToolStripMenuItem
-        ' 
-        PetugasToolStripMenuItem.Name = "PetugasToolStripMenuItem"
-        resources.ApplyResources(PetugasToolStripMenuItem, "PetugasToolStripMenuItem")
         ' 
         ' TambahToolStripMenuItem
         ' 
         TambahToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {SemuaBukuToolStripMenuItem, BukuDipinjamToolStripMenuItem})
         resources.ApplyResources(TambahToolStripMenuItem, "TambahToolStripMenuItem")
+        TambahToolStripMenuItem.ForeColor = SystemColors.ControlLight
         TambahToolStripMenuItem.Name = "TambahToolStripMenuItem"
         ' 
         ' SemuaBukuToolStripMenuItem
@@ -77,42 +89,112 @@ Partial Class FormAdmin
         ' 
         ' TransaksiToolStripMenuItem
         ' 
+        TransaksiToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {PeminjamanToolStripMenuItem, HistoriPeminjamanToolStripMenuItem, BukuTamuToolStripMenuItem})
         resources.ApplyResources(TransaksiToolStripMenuItem, "TransaksiToolStripMenuItem")
+        TransaksiToolStripMenuItem.ForeColor = SystemColors.ControlLight
         TransaksiToolStripMenuItem.Name = "TransaksiToolStripMenuItem"
         ' 
-        ' LihatTransaksiToolStripMenuItem
+        ' PeminjamanToolStripMenuItem
         ' 
-        resources.ApplyResources(LihatTransaksiToolStripMenuItem, "LihatTransaksiToolStripMenuItem")
-        LihatTransaksiToolStripMenuItem.Name = "LihatTransaksiToolStripMenuItem"
+        PeminjamanToolStripMenuItem.Name = "PeminjamanToolStripMenuItem"
+        resources.ApplyResources(PeminjamanToolStripMenuItem, "PeminjamanToolStripMenuItem")
+        ' 
+        ' HistoriPeminjamanToolStripMenuItem
+        ' 
+        HistoriPeminjamanToolStripMenuItem.Name = "HistoriPeminjamanToolStripMenuItem"
+        resources.ApplyResources(HistoriPeminjamanToolStripMenuItem, "HistoriPeminjamanToolStripMenuItem")
+        ' 
+        ' BukuTamuToolStripMenuItem
+        ' 
+        BukuTamuToolStripMenuItem.Name = "BukuTamuToolStripMenuItem"
+        resources.ApplyResources(BukuTamuToolStripMenuItem, "BukuTamuToolStripMenuItem")
+        ' 
+        ' AdminToolStripMenuItem
+        ' 
+        AdminToolStripMenuItem.Alignment = ToolStripItemAlignment.Right
+        resources.ApplyResources(AdminToolStripMenuItem, "AdminToolStripMenuItem")
+        AdminToolStripMenuItem.ForeColor = SystemColors.ControlLight
+        AdminToolStripMenuItem.Name = "AdminToolStripMenuItem"
         ' 
         ' lblUserLogin
         ' 
         resources.ApplyResources(lblUserLogin, "lblUserLogin")
         lblUserLogin.Name = "lblUserLogin"
         ' 
+        ' pnlNavbar
+        ' 
+        pnlNavbar.BackColor = Color.FromArgb(CByte(27), CByte(73), CByte(101))
+        pnlNavbar.Controls.Add(Navbar)
+        resources.ApplyResources(pnlNavbar, "pnlNavbar")
+        pnlNavbar.Name = "pnlNavbar"
+        ' 
+        ' pnlScroll
+        ' 
+        resources.ApplyResources(pnlScroll, "pnlScroll")
+        pnlScroll.Controls.Add(pnlKonten)
+        pnlScroll.Name = "pnlScroll"
+        ' 
+        ' pnlKonten
+        ' 
+        pnlKonten.Controls.Add(pnlHero)
+        resources.ApplyResources(pnlKonten, "pnlKonten")
+        pnlKonten.Name = "pnlKonten"
+        ' 
+        ' pnlHero
+        ' 
+        pnlHero.BackColor = Color.FromArgb(CByte(202), CByte(233), CByte(255))
+        pnlHero.Controls.Add(Panel1)
+        pnlHero.Controls.Add(pnlKoleksi)
+        resources.ApplyResources(pnlHero, "pnlHero")
+        pnlHero.Name = "pnlHero"
+        ' 
+        ' Panel1
+        ' 
+        resources.ApplyResources(Panel1, "Panel1")
+        Panel1.Name = "Panel1"
+        ' 
+        ' pnlKoleksi
+        ' 
+        pnlKoleksi.BackColor = Color.Gray
+        resources.ApplyResources(pnlKoleksi, "pnlKoleksi")
+        pnlKoleksi.Name = "pnlKoleksi"
+        ' 
         ' FormAdmin
         ' 
         resources.ApplyResources(Me, "$this")
         AutoScaleMode = AutoScaleMode.Font
+        Controls.Add(pnlScroll)
+        Controls.Add(pnlNavbar)
         Controls.Add(lblUserLogin)
-        Controls.Add(MenuStrip1)
-        MainMenuStrip = MenuStrip1
+        MainMenuStrip = Navbar
         Name = "FormAdmin"
         WindowState = FormWindowState.Maximized
-        MenuStrip1.ResumeLayout(False)
-        MenuStrip1.PerformLayout()
+        Navbar.ResumeLayout(False)
+        Navbar.PerformLayout()
+        pnlNavbar.ResumeLayout(False)
+        pnlScroll.ResumeLayout(False)
+        pnlKonten.ResumeLayout(False)
+        pnlHero.ResumeLayout(False)
         ResumeLayout(False)
         PerformLayout()
     End Sub
 
-    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents Navbar As MenuStrip
     Friend WithEvents TambahToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents TambahUserToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents IadjaiToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents PetugasToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents TransaksiToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents lblUserLogin As Label
+    Friend WithEvents pnlNavbar As Panel
+    Friend WithEvents pnlScroll As Panel
+    Friend WithEvents PeminjamanToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents HistoriPeminjamanToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents BukuTamuToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AdminToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents LogoPerpustakaanToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents SemuaBukuToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents BukuDipinjamToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents TransaksiToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents LihatTransaksiToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents lblUserLogin As Label
+    Friend WithEvents pnlKonten As Panel
+    Friend WithEvents pnlHero As Panel
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents pnlKoleksi As Panel
 End Class
