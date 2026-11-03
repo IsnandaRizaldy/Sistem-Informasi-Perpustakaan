@@ -29,6 +29,7 @@ Partial Class FormAdmin
         TambahToolStripMenuItem = New ToolStripMenuItem()
         SemuaBukuToolStripMenuItem = New ToolStripMenuItem()
         BukuDipinjamToolStripMenuItem = New ToolStripMenuItem()
+        LihatKatalogToolStripMenuItem = New ToolStripMenuItem()
         TransaksiToolStripMenuItem = New ToolStripMenuItem()
         PeminjamanToolStripMenuItem = New ToolStripMenuItem()
         HistoriPeminjamanToolStripMenuItem = New ToolStripMenuItem()
@@ -39,8 +40,13 @@ Partial Class FormAdmin
         pnlScroll = New Panel()
         pnlKonten = New Panel()
         pnlHero = New Panel()
+        Button1 = New Button()
+        lblHero3 = New Label()
+        lblHero2 = New Label()
+        lblHero1 = New Label()
         Panel1 = New Panel()
         pnlKoleksi = New Panel()
+        BackgroundWorker1 = New ComponentModel.BackgroundWorker()
         Navbar.SuspendLayout()
         pnlNavbar.SuspendLayout()
         pnlScroll.SuspendLayout()
@@ -72,7 +78,7 @@ Partial Class FormAdmin
         ' 
         ' TambahToolStripMenuItem
         ' 
-        TambahToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {SemuaBukuToolStripMenuItem, BukuDipinjamToolStripMenuItem})
+        TambahToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {SemuaBukuToolStripMenuItem, BukuDipinjamToolStripMenuItem, LihatKatalogToolStripMenuItem})
         resources.ApplyResources(TambahToolStripMenuItem, "TambahToolStripMenuItem")
         TambahToolStripMenuItem.ForeColor = SystemColors.ControlLight
         TambahToolStripMenuItem.Name = "TambahToolStripMenuItem"
@@ -86,6 +92,11 @@ Partial Class FormAdmin
         ' 
         BukuDipinjamToolStripMenuItem.Name = "BukuDipinjamToolStripMenuItem"
         resources.ApplyResources(BukuDipinjamToolStripMenuItem, "BukuDipinjamToolStripMenuItem")
+        ' 
+        ' LihatKatalogToolStripMenuItem
+        ' 
+        LihatKatalogToolStripMenuItem.Name = "LihatKatalogToolStripMenuItem"
+        resources.ApplyResources(LihatKatalogToolStripMenuItem, "LihatKatalogToolStripMenuItem")
         ' 
         ' TransaksiToolStripMenuItem
         ' 
@@ -143,10 +154,40 @@ Partial Class FormAdmin
         ' pnlHero
         ' 
         pnlHero.BackColor = Color.FromArgb(CByte(202), CByte(233), CByte(255))
+        pnlHero.Controls.Add(Button1)
+        pnlHero.Controls.Add(lblHero3)
+        pnlHero.Controls.Add(lblHero2)
+        pnlHero.Controls.Add(lblHero1)
         pnlHero.Controls.Add(Panel1)
         pnlHero.Controls.Add(pnlKoleksi)
         resources.ApplyResources(pnlHero, "pnlHero")
         pnlHero.Name = "pnlHero"
+        ' 
+        ' Button1
+        ' 
+        Button1.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(0))
+        resources.ApplyResources(Button1, "Button1")
+        Button1.ForeColor = SystemColors.ControlLightLight
+        Button1.Name = "Button1"
+        Button1.UseVisualStyleBackColor = False
+        ' 
+        ' lblHero3
+        ' 
+        resources.ApplyResources(lblHero3, "lblHero3")
+        lblHero3.ForeColor = SystemColors.ControlLightLight
+        lblHero3.Name = "lblHero3"
+        ' 
+        ' lblHero2
+        ' 
+        resources.ApplyResources(lblHero2, "lblHero2")
+        lblHero2.ForeColor = SystemColors.ControlLightLight
+        lblHero2.Name = "lblHero2"
+        ' 
+        ' lblHero1
+        ' 
+        resources.ApplyResources(lblHero1, "lblHero1")
+        lblHero1.ForeColor = Color.DarkOrange
+        lblHero1.Name = "lblHero1"
         ' 
         ' Panel1
         ' 
@@ -175,6 +216,7 @@ Partial Class FormAdmin
         pnlScroll.ResumeLayout(False)
         pnlKonten.ResumeLayout(False)
         pnlHero.ResumeLayout(False)
+        pnlHero.PerformLayout()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -197,4 +239,11 @@ Partial Class FormAdmin
     Friend WithEvents pnlHero As Panel
     Friend WithEvents Panel1 As Panel
     Friend WithEvents pnlKoleksi As Panel
+    Friend WithEvents lblHero2 As Label
+    Friend WithEvents lblHero1 As Label
+    Friend WithEvents lblHero3 As Label
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button1 As Button
+    Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
+    Friend WithEvents LihatKatalogToolStripMenuItem As ToolStripMenuItem
 End Class

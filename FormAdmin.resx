@@ -164,6 +164,12 @@
   <data name="BukuDipinjamToolStripMenuItem.Text" xml:space="preserve">
     <value>Buku Dipinjam</value>
   </data>
+  <data name="LihatKatalogToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>374, 44</value>
+  </data>
+  <data name="LihatKatalogToolStripMenuItem.Text" xml:space="preserve">
+    <value>Lihat Katalog</value>
+  </data>
   <data name="TambahToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
     <value>Cooper Black, 19.800001pt</value>
   </data>
@@ -208,6 +214,9 @@
   </data>
   <data name="AdminToolStripMenuItem.Text" xml:space="preserve">
     <value>Admin</value>
+  </data>
+  <data name="AdminToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="Navbar.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -304,6 +313,132 @@
   <data name="pnlScroll.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="Button1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 13.8pt, style=Bold</value>
+  </data>
+  <data name="Button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>388, 263</value>
+  </data>
+  <data name="Button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>400, 78</value>
+  </data>
+  <data name="Button1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="Button1.Text" xml:space="preserve">
+    <value>PERPUSTAKAAN DIGITAL</value>
+  </data>
+  <data name="&gt;&gt;Button1.Name" xml:space="preserve">
+    <value>Button1</value>
+  </data>
+  <data name="&gt;&gt;Button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Button1.Parent" xml:space="preserve">
+    <value>pnlHero</value>
+  </data>
+  <data name="&gt;&gt;Button1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblHero3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblHero3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 24pt, style=Bold</value>
+  </data>
+  <data name="lblHero3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblHero3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>388, 206</value>
+  </data>
+  <data name="lblHero3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>361, 54</value>
+  </data>
+  <data name="lblHero3.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblHero3.Text" xml:space="preserve">
+    <value>BARENG-BARENG</value>
+  </data>
+  <data name="&gt;&gt;lblHero3.Name" xml:space="preserve">
+    <value>lblHero3</value>
+  </data>
+  <data name="&gt;&gt;lblHero3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblHero3.Parent" xml:space="preserve">
+    <value>pnlHero</value>
+  </data>
+  <data name="&gt;&gt;lblHero3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblHero2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblHero2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 24pt, style=Bold</value>
+  </data>
+  <data name="lblHero2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblHero2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>388, 152</value>
+  </data>
+  <data name="lblHero2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>466, 54</value>
+  </data>
+  <data name="lblHero2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblHero2.Text" xml:space="preserve">
+    <value>JELAJAHI DUNIA BUKU</value>
+  </data>
+  <data name="&gt;&gt;lblHero2.Name" xml:space="preserve">
+    <value>lblHero2</value>
+  </data>
+  <data name="&gt;&gt;lblHero2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblHero2.Parent" xml:space="preserve">
+    <value>pnlHero</value>
+  </data>
+  <data name="&gt;&gt;lblHero2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblHero1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblHero1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 25.800001pt, style=Bold</value>
+  </data>
+  <data name="lblHero1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblHero1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>388, 92</value>
+  </data>
+  <data name="lblHero1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>255, 60</value>
+  </data>
+  <data name="lblHero1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lblHero1.Text" xml:space="preserve">
+    <value>AYO REK...!</value>
+  </data>
+  <data name="&gt;&gt;lblHero1.Name" xml:space="preserve">
+    <value>lblHero1</value>
+  </data>
+  <data name="&gt;&gt;lblHero1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblHero1.Parent" xml:space="preserve">
+    <value>pnlHero</value>
+  </data>
+  <data name="&gt;&gt;lblHero1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="Panel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 900</value>
   </data>
@@ -323,7 +458,7 @@
     <value>pnlHero</value>
   </data>
   <data name="&gt;&gt;Panel1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>4</value>
   </data>
   <data name="pnlKoleksi.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 450</value>
@@ -344,7 +479,7 @@
     <value>pnlHero</value>
   </data>
   <data name="&gt;&gt;pnlKoleksi.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>5</value>
   </data>
   <data name="pnlHero.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -412,6 +547,9 @@
   <data name="&gt;&gt;pnlScroll.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <metadata name="BackgroundWorker1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>125, 17</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -425,7 +563,7 @@
     <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Form Admin</value>
+    <value>After Login</value>
   </data>
   <data name="&gt;&gt;LogoPerpustakaanToolStripMenuItem.Name" xml:space="preserve">
     <value>LogoPerpustakaanToolStripMenuItem</value>
@@ -457,6 +595,12 @@
   <data name="&gt;&gt;BukuDipinjamToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;LihatKatalogToolStripMenuItem.Name" xml:space="preserve">
+    <value>LihatKatalogToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;LihatKatalogToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;TransaksiToolStripMenuItem.Name" xml:space="preserve">
     <value>TransaksiToolStripMenuItem</value>
   </data>
@@ -486,6 +630,12 @@
   </data>
   <data name="&gt;&gt;AdminToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BackgroundWorker1.Name" xml:space="preserve">
+    <value>BackgroundWorker1</value>
+  </data>
+  <data name="&gt;&gt;BackgroundWorker1.Type" xml:space="preserve">
+    <value>System.ComponentModel.BackgroundWorker, System.ComponentModel.EventBasedAsync, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FormAdmin</value>

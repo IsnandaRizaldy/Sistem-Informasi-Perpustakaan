@@ -25,8 +25,6 @@ Partial Class LandingSite
         MenuStrip1 = New MenuStrip()
         StripMenuLogin = New ToolStripMenuItem()
         BukuToolStripMenuItem = New ToolStripMenuItem()
-        LihatSemuaBukuToolStripMenuItem = New ToolStripMenuItem()
-        LihatKategoriToolStripMenuItem = New ToolStripMenuItem()
         DaftarAnggotaToolStripMenuItem = New ToolStripMenuItem()
         MenuStrip1.SuspendLayout()
         SuspendLayout()
@@ -55,24 +53,11 @@ Partial Class LandingSite
         ' 
         ' BukuToolStripMenuItem
         ' 
-        BukuToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {LihatSemuaBukuToolStripMenuItem, LihatKategoriToolStripMenuItem})
         BukuToolStripMenuItem.ForeColor = SystemColors.ControlLight
         BukuToolStripMenuItem.Margin = New Padding(50, 0, 50, 0)
         BukuToolStripMenuItem.Name = "BukuToolStripMenuItem"
         BukuToolStripMenuItem.Size = New Size(126, 43)
         BukuToolStripMenuItem.Text = "Buku"
-        ' 
-        ' LihatSemuaBukuToolStripMenuItem
-        ' 
-        LihatSemuaBukuToolStripMenuItem.Name = "LihatSemuaBukuToolStripMenuItem"
-        LihatSemuaBukuToolStripMenuItem.Size = New Size(428, 44)
-        LihatSemuaBukuToolStripMenuItem.Text = "Lihat Semua Buku"
-        ' 
-        ' LihatKategoriToolStripMenuItem
-        ' 
-        LihatKategoriToolStripMenuItem.Name = "LihatKategoriToolStripMenuItem"
-        LihatKategoriToolStripMenuItem.Size = New Size(428, 44)
-        LihatKategoriToolStripMenuItem.Text = "Lihat Kategori"
         ' 
         ' DaftarAnggotaToolStripMenuItem
         ' 
@@ -109,7 +94,5 @@ Partial Class LandingSite
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents StripMenuLogin As ToolStripMenuItem
     Friend WithEvents BukuToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents LihatSemuaBukuToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents LihatKategoriToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents DaftarAnggotaToolStripMenuItem As ToolStripMenuItem
 End Class
