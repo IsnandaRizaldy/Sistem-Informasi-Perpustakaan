@@ -150,7 +150,7 @@ Public Class FormHalamanDepan
                                 LabelNamaDanRole.Visible = True
                                 LabelNamaDanRole.Text = "Selamat Datang " & role.ToUpper() & " " & nama & "!"
 
-                                LabelTanggalDanWaktu.Text = DateAndTime
+                                'LabelTanggalDanWaktu.Text = DateAndTime
 
                                 PictureBoxRole.Visible = True
                                 PictureBoxRole.Image = My.Resources.Logo_Admin_Putih
