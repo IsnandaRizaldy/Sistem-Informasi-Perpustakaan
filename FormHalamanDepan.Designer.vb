@@ -38,7 +38,7 @@ Partial Class FormHalamanDepan
         Label9 = New Label()
         Label8 = New Label()
         Label6 = New Label()
-        Panel3 = New Panel()
+        PanelKonten = New Panel()
         DataGridView1 = New DataGridView()
         PanelPintasanGridView = New Panel()
         Button2 = New Button()
@@ -55,7 +55,7 @@ Partial Class FormHalamanDepan
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         PanelSidebar.SuspendLayout()
-        Panel3.SuspendLayout()
+        PanelKonten.SuspendLayout()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         PanelPintasanGridView.SuspendLayout()
         PanelInformasiAnggota.SuspendLayout()
@@ -101,7 +101,7 @@ Partial Class FormHalamanDepan
         ' Label14
         ' 
         Label14.AutoSize = True
-        Label14.Location = New Point(1753, 47)
+        Label14.Location = New Point(1641, 50)
         Label14.Name = "Label14"
         Label14.Size = New Size(82, 20)
         Label14.TabIndex = 7
@@ -109,7 +109,7 @@ Partial Class FormHalamanDepan
         ' 
         ' PictureBox1
         ' 
-        PictureBox1.Location = New Point(1588, 30)
+        PictureBox1.Location = New Point(1490, 31)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(125, 62)
         PictureBox1.TabIndex = 6
@@ -155,9 +155,9 @@ Partial Class FormHalamanDepan
         ' PictureBox2
         ' 
         PictureBox2.Image = My.Resources.Resources.Logo_Perpus_Minimalis
-        PictureBox2.Location = New Point(78, 0)
+        PictureBox2.Location = New Point(57, 0)
         PictureBox2.Name = "PictureBox2"
-        PictureBox2.Size = New Size(90, 92)
+        PictureBox2.Size = New Size(115, 125)
         PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox2.TabIndex = 1
         PictureBox2.TabStop = False
@@ -232,19 +232,20 @@ Partial Class FormHalamanDepan
         Label6.TabIndex = 2
         Label6.Text = "Beranda"
         ' 
-        ' Panel3
+        ' PanelKonten
         ' 
-        Panel3.Controls.Add(DataGridView1)
-        Panel3.Controls.Add(PanelPintasanGridView)
-        Panel3.Controls.Add(PanelInformasiAnggota)
-        Panel3.Controls.Add(PanelInformasiBukuDipinjam)
-        Panel3.Controls.Add(PanelInformasiTotalBuku)
-        Panel3.Controls.Add(PanelSidebar)
-        Panel3.Dock = DockStyle.Fill
-        Panel3.Location = New Point(0, 125)
-        Panel3.Name = "Panel3"
-        Panel3.Size = New Size(1902, 908)
-        Panel3.TabIndex = 2
+        PanelKonten.BackColor = SystemColors.GradientActiveCaption
+        PanelKonten.Controls.Add(DataGridView1)
+        PanelKonten.Controls.Add(PanelPintasanGridView)
+        PanelKonten.Controls.Add(PanelInformasiAnggota)
+        PanelKonten.Controls.Add(PanelInformasiBukuDipinjam)
+        PanelKonten.Controls.Add(PanelInformasiTotalBuku)
+        PanelKonten.Controls.Add(PanelSidebar)
+        PanelKonten.Dock = DockStyle.Fill
+        PanelKonten.Location = New Point(0, 125)
+        PanelKonten.Name = "PanelKonten"
+        PanelKonten.Size = New Size(1902, 908)
+        PanelKonten.TabIndex = 2
         ' 
         ' DataGridView1
         ' 
@@ -358,7 +359,7 @@ Partial Class FormHalamanDepan
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1902, 1033)
-        Controls.Add(Panel3)
+        Controls.Add(PanelKonten)
         Controls.Add(PanelHeader)
         Name = "FormHalamanDepan"
         Text = "Halaman Depan"
@@ -369,7 +370,7 @@ Partial Class FormHalamanDepan
         CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         PanelSidebar.ResumeLayout(False)
         PanelSidebar.PerformLayout()
-        Panel3.ResumeLayout(False)
+        PanelKonten.ResumeLayout(False)
         CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
         PanelPintasanGridView.ResumeLayout(False)
         PanelPintasanGridView.PerformLayout()
@@ -385,7 +386,7 @@ Partial Class FormHalamanDepan
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PanelSidebar As Panel
     Friend WithEvents Label1 As Label
-    Friend WithEvents Panel3 As Panel
+    Friend WithEvents PanelKonten As Panel
     Friend WithEvents Label2 As Label
     Friend WithEvents PanelInformasiTotalBuku As Panel
     Friend WithEvents Label3 As Label
