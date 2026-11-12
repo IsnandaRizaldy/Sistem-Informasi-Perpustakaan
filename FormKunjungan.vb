@@ -14,4 +14,12 @@
     Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
 
     End Sub
+
+    Private Sub RadioButton2_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton2.CheckedChanged
+
+    End Sub
+
+    Private Sub Label12_Click(sender As Object, e As EventArgs) Handles Label12.Click
+
+    End Sub
 End Class

@@ -100,24 +100,23 @@ Partial Class FormKunjungan
         ' 
         RadioButton2.Appearance = Appearance.Button
         RadioButton2.AutoSize = True
-        RadioButton2.Location = New Point(155, 15)
+        RadioButton2.Location = New Point(137, 15)
         RadioButton2.Name = "RadioButton2"
-        RadioButton2.Size = New Size(110, 30)
+        RadioButton2.Size = New Size(144, 30)
         RadioButton2.TabIndex = 1
         RadioButton2.TabStop = True
-        RadioButton2.Text = "RadioButton2"
+        RadioButton2.Text = "Pengunjung Umum"
         RadioButton2.UseVisualStyleBackColor = True
         ' 
         ' RadioButton1
         ' 
         RadioButton1.Appearance = Appearance.Button
-        RadioButton1.AutoSize = True
         RadioButton1.Location = New Point(14, 15)
         RadioButton1.Name = "RadioButton1"
         RadioButton1.Size = New Size(110, 30)
         RadioButton1.TabIndex = 0
         RadioButton1.TabStop = True
-        RadioButton1.Text = "RadioButton1"
+        RadioButton1.Text = "Anggota"
         RadioButton1.UseVisualStyleBackColor = True
         ' 
         ' Panel4
@@ -252,7 +251,7 @@ Partial Class FormKunjungan
         ' 
         Label12.AutoSize = True
         Label12.Font = New Font("Times New Roman", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label12.Location = New Point(3, 11)
+        Label12.Location = New Point(31, 11)
         Label12.Name = "Label12"
         Label12.Size = New Size(264, 32)
         Label12.TabIndex = 14
