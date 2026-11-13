@@ -23,13 +23,13 @@ Partial Class FormHalamanDepan
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         PanelHeader = New Panel()
-        TextBoxPassword = New TextBox()
-        TextBoxUsername = New TextBox()
-        Label14 = New Label()
-        PictureBox1 = New PictureBox()
-        Button1 = New Button()
-        Label13 = New Label()
-        Label2 = New Label()
+        txtKataSandi = New TextBox()
+        txtNamaPengguna = New TextBox()
+        LabelNamaLengkap = New Label()
+        PictureBoxRole = New PictureBox()
+        btnLogin = New Button()
+        LabelTanggalDanWaktu = New Label()
+        LabelNamaDanRole = New Label()
         Label1 = New Label()
         PictureBox2 = New PictureBox()
         PanelSidebar = New Panel()
@@ -38,7 +38,7 @@ Partial Class FormHalamanDepan
         Label9 = New Label()
         Label8 = New Label()
         Label6 = New Label()
-        Panel3 = New Panel()
+        PanelKonten = New Panel()
         DataGridView1 = New DataGridView()
         PanelPintasanGridView = New Panel()
         Button2 = New Button()
@@ -52,10 +52,10 @@ Partial Class FormHalamanDepan
         PanelInformasiTotalBuku = New Panel()
         Label3 = New Label()
         PanelHeader.SuspendLayout()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBoxRole, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         PanelSidebar.SuspendLayout()
-        Panel3.SuspendLayout()
+        PanelKonten.SuspendLayout()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         PanelPintasanGridView.SuspendLayout()
         PanelInformasiAnggota.SuspendLayout()
@@ -65,13 +65,14 @@ Partial Class FormHalamanDepan
         ' 
         ' PanelHeader
         ' 
-        PanelHeader.Controls.Add(TextBoxPassword)
-        PanelHeader.Controls.Add(TextBoxUsername)
-        PanelHeader.Controls.Add(Label14)
-        PanelHeader.Controls.Add(PictureBox1)
-        PanelHeader.Controls.Add(Button1)
-        PanelHeader.Controls.Add(Label13)
-        PanelHeader.Controls.Add(Label2)
+        PanelHeader.BackColor = Color.FromArgb(CByte(13), CByte(49), CByte(95))
+        PanelHeader.Controls.Add(txtKataSandi)
+        PanelHeader.Controls.Add(txtNamaPengguna)
+        PanelHeader.Controls.Add(LabelNamaLengkap)
+        PanelHeader.Controls.Add(PictureBoxRole)
+        PanelHeader.Controls.Add(btnLogin)
+        PanelHeader.Controls.Add(LabelTanggalDanWaktu)
+        PanelHeader.Controls.Add(LabelNamaDanRole)
         PanelHeader.Controls.Add(Label1)
         PanelHeader.Controls.Add(PictureBox2)
         PanelHeader.Dock = DockStyle.Top
@@ -80,72 +81,74 @@ Partial Class FormHalamanDepan
         PanelHeader.Size = New Size(1902, 125)
         PanelHeader.TabIndex = 0
         ' 
-        ' TextBoxPassword
+        ' txtKataSandi
         ' 
-        TextBoxPassword.ForeColor = SystemColors.ScrollBar
-        TextBoxPassword.Location = New Point(958, 47)
-        TextBoxPassword.Name = "TextBoxPassword"
-        TextBoxPassword.Size = New Size(207, 27)
-        TextBoxPassword.TabIndex = 8
-        TextBoxPassword.Text = "Kata Sandi"
+        txtKataSandi.ForeColor = SystemColors.ScrollBar
+        txtKataSandi.Location = New Point(958, 47)
+        txtKataSandi.Name = "txtKataSandi"
+        txtKataSandi.Size = New Size(207, 27)
+        txtKataSandi.TabIndex = 8
+        txtKataSandi.Text = "Kata Sandi"
         ' 
-        ' TextBoxUsername
+        ' txtNamaPengguna
         ' 
-        TextBoxUsername.ForeColor = SystemColors.ScrollBar
-        TextBoxUsername.Location = New Point(731, 47)
-        TextBoxUsername.Name = "TextBoxUsername"
-        TextBoxUsername.Size = New Size(207, 27)
-        TextBoxUsername.TabIndex = 8
-        TextBoxUsername.Text = "Nama Pengguna"
+        txtNamaPengguna.ForeColor = SystemColors.ScrollBar
+        txtNamaPengguna.Location = New Point(731, 47)
+        txtNamaPengguna.Name = "txtNamaPengguna"
+        txtNamaPengguna.Size = New Size(207, 27)
+        txtNamaPengguna.TabIndex = 8
+        txtNamaPengguna.Text = "Nama Pengguna"
         ' 
-        ' Label14
+        ' LabelNamaLengkap
         ' 
-        Label14.AutoSize = True
-        Label14.Location = New Point(1753, 47)
-        Label14.Name = "Label14"
-        Label14.Size = New Size(82, 20)
-        Label14.TabIndex = 7
-        Label14.Text = "Nama User"
+        LabelNamaLengkap.AutoSize = True
+        LabelNamaLengkap.Location = New Point(1641, 50)
+        LabelNamaLengkap.Name = "LabelNamaLengkap"
+        LabelNamaLengkap.Size = New Size(82, 20)
+        LabelNamaLengkap.TabIndex = 7
+        LabelNamaLengkap.Text = "Nama User"
         ' 
-        ' PictureBox1
+        ' PictureBoxRole
         ' 
-        PictureBox1.Location = New Point(1588, 30)
-        PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(125, 62)
-        PictureBox1.TabIndex = 6
-        PictureBox1.TabStop = False
+        PictureBoxRole.Location = New Point(1490, 31)
+        PictureBoxRole.Name = "PictureBoxRole"
+        PictureBoxRole.Size = New Size(125, 62)
+        PictureBoxRole.SizeMode = PictureBoxSizeMode.Zoom
+        PictureBoxRole.TabIndex = 6
+        PictureBoxRole.TabStop = False
         ' 
-        ' Button1
+        ' btnLogin
         ' 
-        Button1.Location = New Point(1185, 46)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(94, 29)
-        Button1.TabIndex = 5
-        Button1.Text = "Login"
-        Button1.UseVisualStyleBackColor = True
+        btnLogin.Location = New Point(1185, 46)
+        btnLogin.Name = "btnLogin"
+        btnLogin.Size = New Size(94, 29)
+        btnLogin.TabIndex = 5
+        btnLogin.Text = "Login"
+        btnLogin.UseVisualStyleBackColor = True
         ' 
-        ' Label13
+        ' LabelTanggalDanWaktu
         ' 
-        Label13.AutoSize = True
-        Label13.Location = New Point(272, 82)
-        Label13.Name = "Label13"
-        Label13.Size = New Size(135, 20)
-        Label13.TabIndex = 4
-        Label13.Text = "Tanggal dan Waktu"
+        LabelTanggalDanWaktu.AutoSize = True
+        LabelTanggalDanWaktu.Location = New Point(272, 82)
+        LabelTanggalDanWaktu.Name = "LabelTanggalDanWaktu"
+        LabelTanggalDanWaktu.Size = New Size(135, 20)
+        LabelTanggalDanWaktu.TabIndex = 4
+        LabelTanggalDanWaktu.Text = "Tanggal dan Waktu"
         ' 
-        ' Label2
+        ' LabelNamaDanRole
         ' 
-        Label2.AutoSize = True
-        Label2.Location = New Point(272, 46)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(172, 20)
-        Label2.TabIndex = 3
-        Label2.Text = "Selamat Datang, (ROLE)!"
+        LabelNamaDanRole.AutoSize = True
+        LabelNamaDanRole.Location = New Point(272, 46)
+        LabelNamaDanRole.Name = "LabelNamaDanRole"
+        LabelNamaDanRole.Size = New Size(172, 20)
+        LabelNamaDanRole.TabIndex = 3
+        LabelNamaDanRole.Text = "Selamat Datang, (ROLE)!"
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.ForeColor = SystemColors.HighlightText
         Label1.Location = New Point(21, 78)
         Label1.Name = "Label1"
         Label1.Size = New Size(201, 25)
@@ -154,10 +157,10 @@ Partial Class FormHalamanDepan
         ' 
         ' PictureBox2
         ' 
-        PictureBox2.Image = My.Resources.Resources.Logo_Perpus_Minimalis
-        PictureBox2.Location = New Point(78, 0)
+        PictureBox2.Image = My.Resources.Resources.Logo_Perpus_Minimalis___Putih
+        PictureBox2.Location = New Point(57, 0)
         PictureBox2.Name = "PictureBox2"
-        PictureBox2.Size = New Size(90, 92)
+        PictureBox2.Size = New Size(115, 125)
         PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox2.TabIndex = 1
         PictureBox2.TabStop = False
@@ -165,7 +168,7 @@ Partial Class FormHalamanDepan
         ' PanelSidebar
         ' 
         PanelSidebar.AutoScroll = True
-        PanelSidebar.BackColor = Color.FromArgb(CByte(40), CByte(88), CByte(123))
+        PanelSidebar.BackColor = Color.FromArgb(CByte(13), CByte(49), CByte(95))
         PanelSidebar.Controls.Add(Label11)
         PanelSidebar.Controls.Add(Label10)
         PanelSidebar.Controls.Add(Label9)
@@ -232,19 +235,20 @@ Partial Class FormHalamanDepan
         Label6.TabIndex = 2
         Label6.Text = "Beranda"
         ' 
-        ' Panel3
+        ' PanelKonten
         ' 
-        Panel3.Controls.Add(DataGridView1)
-        Panel3.Controls.Add(PanelPintasanGridView)
-        Panel3.Controls.Add(PanelInformasiAnggota)
-        Panel3.Controls.Add(PanelInformasiBukuDipinjam)
-        Panel3.Controls.Add(PanelInformasiTotalBuku)
-        Panel3.Controls.Add(PanelSidebar)
-        Panel3.Dock = DockStyle.Fill
-        Panel3.Location = New Point(0, 125)
-        Panel3.Name = "Panel3"
-        Panel3.Size = New Size(1902, 908)
-        Panel3.TabIndex = 2
+        PanelKonten.BackColor = SystemColors.GradientActiveCaption
+        PanelKonten.Controls.Add(DataGridView1)
+        PanelKonten.Controls.Add(PanelPintasanGridView)
+        PanelKonten.Controls.Add(PanelInformasiAnggota)
+        PanelKonten.Controls.Add(PanelInformasiBukuDipinjam)
+        PanelKonten.Controls.Add(PanelInformasiTotalBuku)
+        PanelKonten.Controls.Add(PanelSidebar)
+        PanelKonten.Dock = DockStyle.Fill
+        PanelKonten.Location = New Point(0, 125)
+        PanelKonten.Name = "PanelKonten"
+        PanelKonten.Size = New Size(1902, 908)
+        PanelKonten.TabIndex = 2
         ' 
         ' DataGridView1
         ' 
@@ -358,18 +362,18 @@ Partial Class FormHalamanDepan
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1902, 1033)
-        Controls.Add(Panel3)
+        Controls.Add(PanelKonten)
         Controls.Add(PanelHeader)
         Name = "FormHalamanDepan"
         Text = "Halaman Depan"
         WindowState = FormWindowState.Maximized
         PanelHeader.ResumeLayout(False)
         PanelHeader.PerformLayout()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBoxRole, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         PanelSidebar.ResumeLayout(False)
         PanelSidebar.PerformLayout()
-        Panel3.ResumeLayout(False)
+        PanelKonten.ResumeLayout(False)
         CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
         PanelPintasanGridView.ResumeLayout(False)
         PanelPintasanGridView.PerformLayout()
@@ -385,8 +389,8 @@ Partial Class FormHalamanDepan
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PanelSidebar As Panel
     Friend WithEvents Label1 As Label
-    Friend WithEvents Panel3 As Panel
-    Friend WithEvents Label2 As Label
+    Friend WithEvents PanelKonten As Panel
+    Friend WithEvents LabelNamaDanRole As Label
     Friend WithEvents PanelInformasiTotalBuku As Panel
     Friend WithEvents Label3 As Label
     Friend WithEvents Label7 As Label
@@ -400,14 +404,14 @@ Partial Class FormHalamanDepan
     Friend WithEvents Label10 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label8 As Label
-    Friend WithEvents Label14 As Label
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Label13 As Label
+    Friend WithEvents LabelNamaLengkap As Label
+    Friend WithEvents PictureBoxRole As PictureBox
+    Friend WithEvents btnLogin As Button
+    Friend WithEvents LabelTanggalDanWaktu As Label
     Friend WithEvents Label12 As Label
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents Button2 As Button
     Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBoxUsername As TextBox
-    Friend WithEvents TextBoxPassword As TextBox
+    Friend WithEvents txtNamaPengguna As TextBox
+    Friend WithEvents txtKataSandi As TextBox
 End Class

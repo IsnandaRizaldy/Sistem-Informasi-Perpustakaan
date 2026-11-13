@@ -48,7 +48,7 @@ Partial Class FormLogin
         ' lblUsername
         ' 
         lblUsername.AutoSize = True
-        lblUsername.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblUsername.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lblUsername.Location = New Point(204, 182)
         lblUsername.Name = "lblUsername"
         lblUsername.Size = New Size(106, 28)
@@ -59,7 +59,7 @@ Partial Class FormLogin
         ' lblPassword
         ' 
         lblPassword.AutoSize = True
-        lblPassword.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblPassword.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lblPassword.Location = New Point(204, 227)
         lblPassword.Name = "lblPassword"
         lblPassword.Size = New Size(101, 28)
@@ -88,7 +88,7 @@ Partial Class FormLogin
         ' btnLogin
         ' 
         btnLogin.FlatStyle = FlatStyle.Flat
-        btnLogin.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnLogin.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnLogin.Location = New Point(550, 431)
         btnLogin.Name = "btnLogin"
         btnLogin.Size = New Size(107, 54)
@@ -109,7 +109,7 @@ Partial Class FormLogin
         ' 
         ' FormLogin
         ' 
-        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1067, 557)
         Controls.Add(btnLogin)
